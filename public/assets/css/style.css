@@ -679,8 +679,8 @@ body:has(.footer_layout_1) .backtotop {
 /* 2.03 - Template Gapping or Spacing - Start
 ================================================== */
 .section_space {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* 2.03 - Template Gapping or Spacing - End
@@ -2154,17 +2154,7 @@ input[type="search"]::-webkit-search-results-decoration {
   content: "";
   position: absolute;
   animation: hueRotate 6s linear infinite;
-  background: linear-gradient(
-    45deg,
-    #faec60,
-    #f3a338,
-    #f37528,
-    #f44380,
-    #be3db3,
-    #0044eb,
-    #5a71f1,
-    #439eff
-  );
+  background: linear-gradient(45deg, #002060, #0058DA);
 }
 .site_header_1 + main {
   padding-top: 135px;
@@ -3356,7 +3346,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .feature_partners_section {
-  padding: 70px 0;
+  padding: 30px 0;
   padding-bottom: 20px;
   background-color: #0132b8;
   overflow: hidden;
@@ -3675,7 +3665,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .engine_image [class*="image_wrap_"] {
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   position: absolute;
@@ -7204,4 +7194,3 @@ Responsive For Mobile & Tablet Devices
 ================================================== */
 
 /*# sourceMappingURL=style.css.map */
-

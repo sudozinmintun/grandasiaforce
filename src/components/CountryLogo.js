@@ -5,40 +5,44 @@ import "swiper/css/autoplay";
 
 const clientLogos = [
   {
-    src: "https://cdn-icons-png.flaticon.com/128/330/330455.png",
-    alt: "Techco Client 1",
-    title: "Singapore",
-  },
-  {
-    src: "https://cdn-icons-png.flaticon.com/128/330/330447.png",
+    src: "/data/customer/1.png",
     alt: "Techco Client 2",
     title: "Thailand",
   },
   {
-    src: "https://cdn-icons-png.flaticon.com/128/630/630691.png",
-    alt: "Techco Client 3",
-    title: "Malaysia",
+    src: "/data/customer/2.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
   },
   {
-    src: "https://cdn-icons-png.flaticon.com/128/330/330622.png",
-    alt: "Techco Client 4",
-    title: "Japan",
+    src: "/data/customer/3.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
   },
   {
-    src: "https://cdn-icons-png.flaticon.com/128/7712/7712828.png",
-    alt: "Techco Client 5",
-    title: "Dubai",
+    src: "/data/customer/4.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
   },
   {
-    src: "https://cdn-icons-png.flaticon.com/128/330/330573.png",
-    alt: "Techco Client 5",
-    title: "Laos",
+    src: "/data/customer/5.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
   },
-
   {
-    src: "https://cdn-icons-png.flaticon.com/128/330/330526.png",
-    alt: "Techco Client 5",
-    title: "Combodia",
+    src: "/data/customer/6.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
+  },
+  {
+    src: "/data/customer/7.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
+  },
+  {
+    src: "/data/customer/8.png",
+    alt: "Techco Client 2",
+    title: "Thailand",
   },
 ];
 
@@ -46,7 +50,7 @@ export default function CountryLogo() {
   return (
     <div className="feature_partners_section">
       <div className="container position-relative">
-        <div className="title_text text-white">Our Service Countries</div>
+        <div className="title_text text-white">Our Customers</div>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}
@@ -74,7 +78,7 @@ export default function CountryLogo() {
           {clientLogos.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="client_logo_item">
-                <img src={logo.src} alt={logo.alt} style={{ width: '100%' }} />
+                <img src={logo.src} alt={logo.alt} style={{ width: "100%" }} />
               </div>
             </SwiperSlide>
           ))}

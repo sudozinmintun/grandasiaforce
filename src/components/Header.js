@@ -6,14 +6,51 @@ function Header() {
     <header className="site_header site_header_1">
       <div className="header_top text-center">
         <div className="container">
-          <p className="m-0">
-            Subscribe us and receive <b>20% bonus</b> discount on checkout.{" "}
-            <a href="pricing.html">
-              <u>Learn more</u> <i className="fa-solid fa-angle-right" />
-            </a>
-          </p>
+          <div className="row d-flex justify-content-between">
+            <div className="col-md-6">
+              <Link className="text-white">+959 964 653 395, </Link>
+              <Link
+                className="text-white"
+                style={{ marginLeft: "10px", marginRight: "10px" }}
+              >
+                {" "}
+                +959 964 653 395
+              </Link>
+              <Link className="text-white">grandasiaforce.gaf@gmail.com</Link>
+            </div>
+
+            <div className="col-md-6 ">
+              <Link className="text-white">
+                <img
+                  src="https://iam-myanmar.com/data/us.gif"
+                  style={{ width: "30px" }}
+                ></img>
+                &nbsp; English
+              </Link>
+
+              <Link
+                className="text-white"
+                style={{ marginLeft: "10px", marginRight: "10px" }}
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/330/330447.png"
+                  style={{ width: "30px" }}
+                ></img>
+                &nbsp; Thailand
+              </Link>
+
+              <Link className="text-white">
+                <img
+                  src="https://iam-myanmar.com/data/jp.jpeg"
+                  style={{ width: "30px" }}
+                ></img>
+                &nbsp; Japanese
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="header_bottom stricky">
         <div className="container">
           <div className="row align-items-center">
@@ -21,13 +58,11 @@ function Header() {
               <div className="site_logo">
                 <Link className="site_link" to={"/"}>
                   <img
-                    src="assets/images/site_logo/site_logo_3.svg"
-                    alt="Site Logo – Techco – IT Solutions & Technology, Business Consulting, Software Company Site Template"
+                    src="https://grandasiaforce-gaf.com/public/data/logo.jpeg"
+                    alt="Grand Asia Force"
+                    style={{ width: "1000px", maxWidth: "250%" }}
                   />
                 </Link>
-                <div className="badge bg-danger-subtle text-danger">
-                  We’re Hiring
-                </div>
               </div>
             </div>
 
@@ -39,10 +74,7 @@ function Header() {
                 >
                   <ul className="main_menu_list unordered_list justify-content-center">
                     <li className="active">
-                      <Link
-                        className="nav-link"
-                        to={"/"}
-                      >
+                      <Link className="nav-link" to={"/"}>
                         Home
                       </Link>
                     </li>
@@ -83,75 +115,9 @@ function Header() {
                                         </small>
                                       </span>
                                       <span className="description mb-0">
-                                        Learn more about Techco
+                                        Learn more about Grand Asia Force
                                       </span>
                                     </Link>
-                                  </div>
-
-                                  <div className="col-lg-3 col-md-6">
-                                    <a
-                                      className="iconbox_block_2"
-                                      href="pricing.html"
-                                    >
-                                      <span className="icon_title_wrap">
-                                        <small className="iconbox_icon">
-                                          <img
-                                            src="assets/images/icons/icon_dollar_2.svg"
-                                            alt="Dollar SVG Icon"
-                                          />
-                                        </small>
-                                        <small className="iconbox_title">
-                                          Our Pricing
-                                        </small>
-                                      </span>
-                                      <span className="description mb-0">
-                                        Streamlined Pricing
-                                      </span>
-                                    </a>
-                                  </div>
-
-                                  <div className="col-lg-3 col-md-6">
-                                    <a
-                                      className="iconbox_block_2"
-                                      href="portfolio.html"
-                                    >
-                                      <span className="icon_title_wrap">
-                                        <small className="iconbox_icon">
-                                          <img
-                                            src="assets/images/icons/icon_chart.svg"
-                                            alt="Chart SVG Icon"
-                                          />
-                                        </small>
-                                        <small className="iconbox_title">
-                                          Portfolio
-                                        </small>
-                                      </span>
-                                      <span className="description mb-0">
-                                        Explore our all overview
-                                      </span>
-                                    </a>
-                                  </div>
-
-                                  <div className="col-lg-3 col-md-6">
-                                    <a
-                                      className="iconbox_block_2"
-                                      href="portfolio_details.html"
-                                    >
-                                      <span className="icon_title_wrap">
-                                        <small className="iconbox_icon">
-                                          <img
-                                            src="assets/images/icons/icon_tag_2.svg"
-                                            alt="Event Tag SVG Icon"
-                                          />
-                                        </small>
-                                        <small className="iconbox_title">
-                                          Portfolio Details
-                                        </small>
-                                      </span>
-                                      <span className="description mb-0">
-                                        Explore our work overview
-                                      </span>
-                                    </a>
                                   </div>
 
                                   <div className="col-lg-3 col-md-6">
@@ -168,28 +134,6 @@ function Header() {
                                         </small>
                                         <small className="iconbox_title">
                                           Team
-                                        </small>
-                                      </span>
-                                      <span className="description mb-0">
-                                        We are friendly Join our team
-                                      </span>
-                                    </a>
-                                  </div>
-
-                                  <div className="col-lg-3 col-md-6">
-                                    <a
-                                      className="iconbox_block_2"
-                                      href="team_details.html"
-                                    >
-                                      <span className="icon_title_wrap">
-                                        <small className="iconbox_icon">
-                                          <img
-                                            src="assets/images/icons/icon_users.svg"
-                                            alt="Users SVG Icon"
-                                          />
-                                        </small>
-                                        <small className="iconbox_title">
-                                          Team Details
                                         </small>
                                       </span>
                                       <span className="description mb-0">
@@ -223,21 +167,21 @@ function Header() {
                                   <div className="col-lg-3 col-md-6">
                                     <a
                                       className="iconbox_block_2"
-                                      href="service_details.html"
+                                      href="service.html"
                                     >
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
-                                            src="assets/images/icons/icon_pen.svg"
+                                            src="assets/images/icons/icon_user_2.svg"
                                             alt="Pen SVG Icon"
                                           />
                                         </small>
                                         <small className="iconbox_title">
-                                          Service Details
+                                          MD's Message
                                         </small>
                                       </span>
                                       <small className="description mb-0">
-                                        Happy to help you!
+                                        Meet our MD
                                       </small>
                                     </a>
                                   </div>
@@ -265,30 +209,15 @@ function Header() {
                                   <div className="review_short_info_2">
                                     <div className="review_admin_logo">
                                       <img
-                                        src="assets/images/clients/client_logo_9.webp"
+                                        src="https://cdn-icons-png.flaticon.com/128/3938/3938039.png"
                                         alt="Client Logo"
+                                        style={{ width: "50px" }}
                                       />
                                     </div>
                                     <div className="review_info_content">
-                                      <ul className="rating_block unordered_list">
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                      </ul>
+                                      +959 750 126 100
                                       <div className="review_counter">
-                                        From <b>200+</b> reviews
+                                        <b>9:00 AM - 5:00 PM</b>
                                       </div>
                                     </div>
                                   </div>
@@ -297,31 +226,13 @@ function Header() {
                                   <div className="review_short_info_2">
                                     <div className="review_admin_logo">
                                       <img
-                                        src="assets/images/clients/client_logo_10.webp"
+                                        src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
                                         alt="Client Logo"
+                                        style={{ width: "50px" }}
                                       />
                                     </div>
                                     <div className="review_info_content">
-                                      <ul className="rating_block unordered_list">
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                        <li>
-                                          <i className="fa-solid fa-star fa-fw" />
-                                        </li>
-                                      </ul>
-                                      <div className="review_counter">
-                                        From <b>200+</b> reviews
-                                      </div>
+                                      𝐆𝐑𝐀𝐍𝐃 𝐀𝐒𝐈𝐀 𝐅𝐎𝐑𝐂𝐄 𝐂𝐎.,𝐋𝐓𝐃
                                     </div>
                                   </div>
                                 </li>
@@ -330,19 +241,20 @@ function Header() {
 
                             <div className="col-lg-3">
                               <div className="site_author bg-primary">
-                                <div className="author_box">
-                                  <div className="author_image bg-light">
-                                    <img
-                                      src="assets/images/avatar/avatar_7.webp"
-                                      alt="Site Author Image"
-                                    />
-                                  </div>
+                                <div className="author_image ">
+                                  <img
+                                    src="/data/md.png"
+                                    alt="Site Author Image"
+                                  />
+                                </div>
+
+                                <div className="author_box pt-4">
                                   <div className="author_box_content">
                                     <h3 className="author_name text-white">
-                                      Maverick Phoenix
+                                      Mr.Thaung Win Htay
                                     </h3>
                                     <span className="author_designation text-white">
-                                      CEO At Techco
+                                      Managing Director
                                     </span>
                                   </div>
                                   <div className="quote_icon">
@@ -352,290 +264,25 @@ function Header() {
                                     />
                                   </div>
                                 </div>
-                                <p className="mb-0 text-white">
-                                  As a CEO at Techco I have been voice crying in
-                                  the wilderness, trying to make requirements
-                                  clear, use every minute to deliver the result,
-                                  and not reinvent the wheel. Here at Techco, I
-                                  made that possible for the clients.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-
-
-                    <li className="dropdown">
-                      <a
-                        className="nav-link"
-                        href="#"
-                        id="portfolio_submenu"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Portfolio
-                      </a>
-                      <ul
-                        className="dropdown-menu"
-                        aria-labelledby="portfolio_submenu"
-                      >
-                        <li>
-                          <a href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li>
-                          <a href="portfolio_details.html">Portfolio Details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a
-                        className="nav-link"
-                        href="#"
-                        id="services_submenu"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Services
-                      </a>
-                      <div
-                        className="dropdown-menu mega_menu_wrapper p-0"
-                        aria-labelledby="services_submenu"
-                      >
-                        <div className="container">
-                          <div className="row justify-content-lg-between">
-                            <div className="col-lg-8">
-                              <div className="row">
-                                <div className="col-lg-4">
-                                  <div className="megamenu_widget">
-                                    <h3 className="megamenu_info_title">
-                                      Services
-                                    </h3>
-                                    <ul className="icon_list unordered_list_block">
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            IT Management Services
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            Data Tracking Security
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            Website Development
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            CRM Solutions and Design
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            UI/UX Design Services
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            Technology Solution
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service_details.html">
-                                          <span className="icon_list_text">
-                                            Software Development
-                                          </span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div className="col-lg-4">
-                                  <div className="megamenu_widget">
-                                    <h3 className="megamenu_info_title">
-                                      Our Fields
-                                    </h3>
-                                    <ul className="icon_list unordered_list_block">
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Healthcare
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Banks
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Logistics
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Supermarkets
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Industries
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Hotels
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="fields.html">
-                                          <span className="icon_list_text">
-                                            Fintech
-                                          </span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div className="col-lg-4">
-                                  <div className="megamenu_widget">
-                                    <h3 className="megamenu_info_title">
-                                      Product
-                                    </h3>
-                                    <ul className="icon_list unordered_list_block">
-                                      <li>
-                                        <a href="portfolio.html">
-                                          <span className="icon_list_text">
-                                            Case Studies
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="pricing.html">
-                                          <span className="icon_list_text">
-                                            Our Pricing
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service.html">
-                                          <span className="icon_list_text">
-                                            Features
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="about.html">
-                                          <span className="icon_list_text">
-                                            Overview
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="#!">
-                                          <span className="icon_list_text">
-                                            New Releases
-                                          </span>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="service.html">
-                                          <span className="icon_list_text">
-                                            Solutions
-                                          </span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="social_area">
-                                <ul
-                                  className="social_icons_block unordered_list"
-                                  data-text="Follow Us:"
+                                <p
+                                  className="mb-0 text-white"
+                                  style={{ textAlign: "justify" }}
                                 >
-                                  <li>
-                                    <a href="#!">
-                                      <i className="fa-brands fa-facebook-f" />
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">
-                                      <i className="fa-brands fa-twitter" />
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">
-                                      <i className="fa-brands fa-linkedin-in" />
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#!">
-                                      <i className="fa-brands fa-dribbble" />
-                                    </a>
-                                  </li>
-                                </ul>
-                                <p className="career_link m-0">
-                                  Looking for new career?{" "}
-                                  <a href="#!">We’re Hiring</a>
+                                  I’m deeply honored to address you as the
+                                  Managing Director of Grand Asia Force Co.,Ltd.
+                                  <Link className="text-white pt-2">
+                                    Read more
+                                  </Link>
                                 </p>
-                              </div>
-                            </div>
-                            <div className="col-lg-3">
-                              <div className="megamenu_case bg-primary">
-                                <h3>Computer Software</h3>
-                                <h4>Astarte Medical</h4>
-                                <img
-                                  src="assets/images/case/case_image_4.webp"
-                                  alt="Case Image"
-                                />
-                                <a className="btn" href="portfolio.html">
-                                  <span
-                                    className="btn_label"
-                                    data-text="Read Case"
-                                  >
-                                    Read Case
-                                  </span>
-                                  <span className="btn_icon">
-                                    <i className="fa-solid fa-arrow-up-right" />
-                                  </span>
-                                </a>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </li>
+
                     <li className="dropdown">
-                      <a
+                      <Link
                         className="nav-link"
                         href="#"
                         id="pages_submenu"
@@ -643,51 +290,42 @@ function Header() {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        Pages
-                      </a>
+                        Job Vacancies
+                      </Link>
                       <ul
                         className="dropdown-menu"
                         aria-labelledby="pages_submenu"
                       >
                         <li>
-                          <a href="about.html">About Us</a>
+                          <a href="about.html">Jobs in Thailand</a>
                         </li>
-                        <li className="dropdown">
-                          <a
-                            className="nav-link"
-                            href="#"
-                            id="blog_submenu"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            Blogs
-                          </a>
-                          <ul
-                            className="dropdown-menu"
-                            aria-labelledby="blog_submenu"
-                          >
-                            <li>
-                              <a href="blog.html">Our Blogs</a>
-                            </li>
-                            <li>
-                              <a href="blog_details.html">Blog Details</a>
-                            </li>
-                          </ul>
-                        </li>
+
                         <li>
-                          <a href="contact.html">Help Center</a>
+                          <a href="about.html">Jobs in Japan</a>
                         </li>
+
                         <li>
-                          <a href="#!">
-                            Careers{" "}
-                            <small className="badge bg-danger-subtle text-danger">
-                              We’re Hiring
-                            </small>
-                          </a>
+                          <a href="about.html">Jobs in Malaysia</a>
+                        </li>
+
+                        <li>
+                          <a href="about.html">Jobs in Singapore</a>
                         </li>
                       </ul>
                     </li>
+
+                    <li>
+                      <a href="contact.html">Submit CV</a>
+                    </li>
+
+                    <li>
+                      <a href="contact.html">Activities</a>
+                    </li>
+
+                    <li>
+                      <a href="contact.html">News</a>
+                    </li>
+
                     <li>
                       <a href="contact.html">Contact</a>
                     </li>
@@ -695,6 +333,7 @@ function Header() {
                 </div>
               </nav>
             </div>
+
             <div className="col-xl-3 col-lg-3 col-5">
               <ul className="header_btns_group unordered_list justify-content-end">
                 <li>
@@ -712,7 +351,7 @@ function Header() {
                 <li>
                   <a className="btn btn-outline-light" href="pricing.html">
                     <span className="btn_label" data-text="Get Started">
-                      Get Started
+                      Send Mail
                     </span>
                     <span className="btn_icon">
                       <i className="fa-solid fa-arrow-up-right" />
