@@ -106,7 +106,7 @@ function Header() {
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
-                                            src="assets/images/icons/icon_wifi.svg"
+                                            src="/assets/images/icons/icon_wifi.svg"
                                             alt="Wifi SVG Icon"
                                           />
                                         </small>
@@ -128,7 +128,7 @@ function Header() {
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
-                                            src="assets/images/icons/icon_user_2.svg"
+                                            src="/assets/images/icons/icon_user_2.svg"
                                             alt="User Check SVG Icon"
                                           />
                                         </small>
@@ -150,7 +150,7 @@ function Header() {
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
-                                            src="assets/images/icons/icon_pen.svg"
+                                            src="/assets/images/icons/icon_pen.svg"
                                             alt="Pen SVG Icon"
                                           />
                                         </small>
@@ -172,7 +172,7 @@ function Header() {
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
-                                            src="assets/images/icons/icon_user_2.svg"
+                                            src="/assets/images/icons/icon_user_2.svg"
                                             alt="Pen SVG Icon"
                                           />
                                         </small>
@@ -259,7 +259,7 @@ function Header() {
                                   </div>
                                   <div className="quote_icon">
                                     <img
-                                      src="assets/images/icons/icon_quote.svg"
+                                      src="/assets/images/icons/icon_quote.svg"
                                       alt="Quote Icon"
                                     />
                                   </div>
@@ -318,8 +318,27 @@ function Header() {
                       <a href="contact.html">Submit CV</a>
                     </li>
 
-                    <li>
-                      <a href="contact.html">Activities</a>
+                    <li class="dropdown">
+                      <Link
+                        class="nav-link"
+                        href="#"
+                        id="portfolio_submenu"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Activities
+                      </Link>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="portfolio_submenu"
+                      >
+                        <li>
+                          <Link to={"/activities/japanese-activities"}>
+                            Japanese Activities
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
 
                     <li>
@@ -327,7 +346,7 @@ function Header() {
                     </li>
 
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <Link to={"/contact"}>Contact</Link>
                     </li>
                   </ul>
                 </div>

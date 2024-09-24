@@ -25,15 +25,13 @@ function Home() {
             </h2>
           </div>
           <div className="row">
-          
-
             <div className="col-lg-4">
               <div className="service_block_2">
                 <div className="service_icon">
                   <img
                     src="https://cdn-icons-png.flaticon.com/128/2095/2095629.png"
                     alt="Techco - Service icon"
-                    style={{width: "100px"}}
+                    style={{ width: "100px" }}
                   />
                 </div>
                 <h3 className="service_title">
@@ -88,7 +86,7 @@ function Home() {
                   <img
                     src="https://cdn-icons-png.flaticon.com/128/6920/6920180.png"
                     alt="Techco - Service icon"
-                    style={{width: "100px"}}
+                    style={{ width: "100px" }}
                   />
                 </div>
                 <h3 className="service_title">
@@ -143,7 +141,7 @@ function Home() {
                   <img
                     src="https://cdn-icons-png.flaticon.com/128/984/984093.png"
                     alt="Techco - Service icon"
-                    style={{width: "100px"}}
+                    style={{ width: "100px" }}
                   />
                 </div>
                 <h3 className="service_title">
@@ -191,7 +189,6 @@ function Home() {
                 </ul>
               </div>
             </div>
-           
           </div>
         </div>
         <div className="decoration_item shape_image_1">
@@ -775,6 +772,7 @@ function Home() {
           </div>
         </div>
       </section>
+
     </div>
   );
 }

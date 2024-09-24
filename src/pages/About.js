@@ -6,7 +6,7 @@ function About() {
       <section
         className="page_banner_section text-center"
         style={{
-          backgroundImage: 'url("assets/images/shapes/bg_pattern_4.svg")',
+          backgroundImage: 'url("/assets/images/shapes/bg_pattern_4.svg")',
         }}
       >
         <div className="container">
