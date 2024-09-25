@@ -101,7 +101,7 @@ function Header() {
                                   <div className="col-lg-3 col-md-6">
                                     <Link
                                       className="iconbox_block_2"
-                                      to={"/about"}
+                                      to={"#"}
                                     >
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">

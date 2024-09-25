@@ -78,13 +78,10 @@ function Activities() {
 
           <div className="filter_elements_wrapper row">
             {images.map((imageName, index) => (
-              <div className="col-lg-4">
+              <div className="col-lg-3">
                 <div className="portfolio_block portfolio_layout_1">
                   <div className="portfolio_image">
-                    <a
-                      className="portfolio_image_wrap bg-light"
-                      href="portfolio_details.html"
-                    >
+                    <a className="portfolio_image_wrap bg-light" href="#!">
                       <img
                         key={index}
                         src={`/data/japan/${imageName}`}
@@ -99,13 +96,16 @@ function Activities() {
                       />
                     </a>
                   </div>
-                  <div className="portfolio_content">
-                    <h3 class="portfolio_title">
+                  <div
+                    className="portfolio_content"
+                    style={{ padding: "14px 30px 28px" }}
+                  >
+                    <h6 class="portfolio_title" style={{ fontSize: "21px" }}>
                       <SlugTitle slug={slug} />
-                    </h3>
+                    </h6>
                     <ul className="category_list unordered_list">
                       <li>
-                        <a href="portfolio.html">
+                        <a href="#!">
                           <i className="fa-solid fa-building" /> Grand Asia
                           Force Co.,Ltd
                         </a>

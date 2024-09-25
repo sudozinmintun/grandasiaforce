@@ -13,6 +13,83 @@ function Footer() {
         <img src="assets/images/shapes/shape_space_2.svg" alt="Techco Shape" />
       </div>
       <div className="container">
+        <div class="service_pill_carousel swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="service_pill_block" href="service_details.html">
+                <i class="fa-solid fa-check"></i>
+                <span>Grand Asia Force Co.,Ltd</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="footer_main_content">
           <div className="row justify-content-lg-between">
             <div className="col-lg-2 col-md-6">
