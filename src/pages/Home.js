@@ -2,6 +2,12 @@ import React from "react";
 import CountryLogo from "../components/CountryLogo";
 import { Link } from "react-router-dom";
 import CustomerLogo from "../components/CustomerLogo";
+import Statement from "../components/Statement";
+import AboutUs from "../components/AboutUs";
+import Organization from "../components/Organization";
+import Team from "../components/Team";
+import News from "./News";
+import WhyChoose from "../components/WhyChoose";
 
 function Home() {
   return (
@@ -35,7 +41,7 @@ function Home() {
                   />
                 </div>
                 <h3 className="service_title">
-                  <a href="service_details.html">THAILAND</a>
+                  <a href="#!">THAILAND</a>
                 </h3>
                 <ul className="icon_list unordered_list_block">
                   <li>
@@ -90,7 +96,7 @@ function Home() {
                   />
                 </div>
                 <h3 className="service_title">
-                  <a href="service_details.html">JAPAN</a>
+                  <a href="#!">JAPAN</a>
                 </h3>
                 <ul className="icon_list unordered_list_block">
                   <li>
@@ -145,7 +151,7 @@ function Home() {
                   />
                 </div>
                 <h3 className="service_title">
-                  <a href="service_details.html">MALAYSIA</a>
+                  <a href="#!">MALAYSIA</a>
                 </h3>
                 <ul className="icon_list unordered_list_block">
                   <li>
@@ -325,332 +331,15 @@ function Home() {
         </div>
       </section>
 
-      <section className="intro_about_section section_space bg-light">
-        <div className="intro_about_content">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8">
-                <div className="image_wrap">
-                  <img
-                    src="https://grandasiaforce-gaf.com/public/data/slider/5.jpeg"
-                    alt="About Techco"
-                  />
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="image_wrap position-relative">
-                  <img src="/data/about_image_4.png" alt="About Techco" />
+      <AboutUs />
 
-                  <Link className="video_btn ripple_effect" href="#">
-                    <span className="btn_icon">
-                      <i className="fa-solid fa-play" />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="heading_block mb-0">
-            <div className="row justify-content-lg-between">
-              <div className="col-lg-4">
-                <div className="heading_focus_text">
-                  Grand Asia Force Co.,Ltd
-                  <span className="badge bg-secondary text-white"></span>
-                </div>
-                <h2 className="heading_text mb-0">
-                  About of <br /> Our Company
-                </h2>
-              </div>
+      <Statement />
 
-              <div className="col-lg-8">
-                <p
-                  className="heading_description mb-0"
-                  style={{ textAlign: "justify" }}
-                >
-                  Grand Asia Force is a top Myanmar employment agency, licensed
-                  by the Ministry of Labour (No. 222/2019). We specialize in
-                  sourcing and training skilled workers, ensuring full legal
-                  compliance, and offering post-employment support. With
-                  successful placements in Thailand, Japan, Singapore, and
-                  Malaysia, we’re your trusted partner for fast, reliable
-                  recruitment solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Organization />
 
-      <section className="policy_section bg-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="iconbox_block">
-                <div className="iconbox_icon bg-warning-subtle">
-                  <img
-                    src="assets/images/icons/icon_dart_board_2.svg"
-                    alt="Dart Board SVG Icon"
-                  />
-                </div>
-                <div className="iconbox_content">
-                  <h3 className="iconbox_title">Our Mission</h3>
-                  <p className="mb-0" style={{ textAlign: "justify" }}>
-                    To provide quality recruitment services for both of
-                    candidates and clients.
-                    <br />
-                    <br />
-                    To help the urban and rural citizenry in gaining overseas
-                    working experience, technical skill and expertise to utilize
-                    in the country development.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <Team />
 
-            <div className="col-lg-4">
-              <div className="iconbox_block">
-                <div className="iconbox_icon bg-secondary-subtle">
-                  <img
-                    src="assets/images/icons/icon_target.svg"
-                    alt="Target SVG Icon"
-                  />
-                </div>
-                <div className="iconbox_content">
-                  <h3 className="iconbox_title">Our Vision</h3>
-                  <p className="mb-0" style={{ textAlign: "justify" }}>
-                    To be a reputable overseas employment agency, maintaining
-                    its sustainable growth with quality recruitment services and
-                    diverse business to other sectors along with the country
-                    development.
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="iconbox_block">
-                <div className="iconbox_icon">
-                  <img
-                    src="assets/images/icons/icon_clock.svg"
-                    alt="Clock SVG Icon"
-                  />
-                </div>
-                <div className="iconbox_content">
-                  <h3 className="iconbox_title">Our Values</h3>
-                  <p className="mb-0" style={{ textAlign: "justify" }}>
-                    <span style={{ color: "blue", fontWeight: "bold" }}>G</span>
-                    lorious,
-                    <span style={{ color: "blue", fontWeight: "bold" }}>
-                      {" "}
-                      A
-                    </span>
-                    ccountable and
-                    <span style={{ color: "blue", fontWeight: "bold" }}>
-                      {" "}
-                      F
-                    </span>
-                    acilitative represented our organization attitude,
-                    fundamental corporate business principle that help us to
-                    achieve our organizational goals in accordance with our
-                    customers and clients’ satisfaction and fulfillment.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="team_section section_space">
-        <div className="container">
-          <div className="heading_block text-center">
-            <div className="heading_focus_text">
-              <span className="badge bg-secondary text-white">Our Expert</span>
-              Team Members 😍
-            </div>
-            <h2 className="heading_text mb-0">Skilled Experts</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="team_block">
-                <div className="team_member_image">
-                  <Link
-                    className="image_wrap"
-                    aria-label="Team Details Button"
-                    to="#"
-                  >
-                    <img
-                      src="/assets/images/team/team_member_image_1.webp"
-                      alt="Team Member Image"
-                    />
-                    <i className="fa-solid fa-arrow-up-right" />
-                  </Link>
-                </div>
-
-                <div className="team_member_info">
-                  <h3 className="team_member_name">
-                    <Link to="#">MR.__________</Link>
-                  </h3>
-                  <h4 className="team_member_designation">Managing Director</h4>
-                  <ul className="social_icons_block unordered_list justify-content-center">
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_facebook.svg"
-                          alt="Icon Facebook"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_twitter_x.svg"
-                          alt="Icon Twitter X"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_linkedin.svg"
-                          alt="Icon Linkedin"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_instagram.svg"
-                          alt="Icon Instagram"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="team_block">
-                <div className="team_member_image">
-                  <a
-                    className="image_wrap"
-                    aria-label="Team Details Button"
-                    href="team_details.html"
-                  >
-                    <img
-                      src="assets/images/team/team_member_image_2.webp"
-                      alt="Team Member Image"
-                    />
-                    <i className="fa-solid fa-arrow-up-right" />
-                  </a>
-                </div>
-                <div className="team_member_info">
-                  <h3 className="team_member_name">
-                    <Link to="#">MR.__________</Link>
-                  </h3>
-                  <h4 className="team_member_designation">Director</h4>
-                  <ul className="social_icons_block unordered_list justify-content-center">
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_facebook.svg"
-                          alt="Icon Facebook"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_twitter_x.svg"
-                          alt="Icon Twitter X"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_linkedin.svg"
-                          alt="Icon Linkedin"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_instagram.svg"
-                          alt="Icon Instagram"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="team_block">
-                <div className="team_member_image">
-                  <a
-                    className="image_wrap"
-                    aria-label="Team Details Button"
-                    href="team_details.html"
-                  >
-                    <img
-                      src="assets/images/team/team_member_image_3.webp"
-                      alt="Team Member Image"
-                    />
-                    <i className="fa-solid fa-arrow-up-right" />
-                  </a>
-                </div>
-                <div className="team_member_info">
-                  <h3 className="team_member_name">
-                    <Link to="#">MR.__________</Link>
-                  </h3>
-                  <h4 className="team_member_designation">Manager</h4>
-                  <ul className="social_icons_block unordered_list justify-content-center">
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_facebook.svg"
-                          alt="Icon Facebook"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_twitter_x.svg"
-                          alt="Icon Twitter X"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_linkedin.svg"
-                          alt="Icon Linkedin"
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <img
-                          src="assets/images/icons/icon_instagram.svg"
-                          alt="Icon Instagram"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <section
         className="client_logo_section section_space"
@@ -773,6 +462,9 @@ function Home() {
         </div>
       </section>
 
+      <WhyChoose />
+      
+      <News />
     </div>
   );
 }

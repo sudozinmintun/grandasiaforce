@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import SlugTitle from "../utility/SlugTitle";
 
 const images = [
@@ -63,14 +63,14 @@ function Activities() {
                   </p>
                 </div>
                 <div class="col-lg-5 d-none d-lg-flex justify-content-end">
-                  <a class="btn btn-primary" href="pricing.html">
-                    <span class="btn_label" data-text="All Works">
-                      All Activity
+                  <Link class="btn btn-primary" to={"/contact"}>
+                    <span class="btn_label" data-text="Contact">
+                      Contact Us
                     </span>
                     <span class="btn_icon">
                       <i class="fa-solid fa-arrow-up-right"></i>
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

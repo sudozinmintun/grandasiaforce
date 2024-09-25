@@ -6,8 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
-
-
+import News from "./pages/News";
+import TeamPage from "./pages/TeamPage";
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/activities/:slug" element={<Activities />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/news" element={<News />} />
+          <Route path="/team" element={<TeamPage />} />
         </Routes>
       </Layout>
     </Router>

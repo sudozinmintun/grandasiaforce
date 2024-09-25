@@ -121,9 +121,9 @@ function Header() {
                                   </div>
 
                                   <div className="col-lg-3 col-md-6">
-                                    <a
+                                    <Link
                                       className="iconbox_block_2"
-                                      href="team.html"
+                                      to={"/team"}
                                     >
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
@@ -139,14 +139,11 @@ function Header() {
                                       <span className="description mb-0">
                                         We are friendly Join our team
                                       </span>
-                                    </a>
+                                    </Link>
                                   </div>
 
                                   <div className="col-lg-3 col-md-6">
-                                    <a
-                                      className="iconbox_block_2"
-                                      href="service.html"
-                                    >
+                                    <Link className="iconbox_block_2" to={"#"}>
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
@@ -161,14 +158,11 @@ function Header() {
                                       <small className="description mb-0">
                                         Happy to help you!
                                       </small>
-                                    </a>
+                                    </Link>
                                   </div>
 
                                   <div className="col-lg-3 col-md-6">
-                                    <a
-                                      className="iconbox_block_2"
-                                      href="service.html"
-                                    >
+                                    <Link className="iconbox_block_2" to={"#"}>
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
@@ -183,7 +177,7 @@ function Header() {
                                       <small className="description mb-0">
                                         Meet our MD
                                       </small>
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
@@ -242,10 +236,7 @@ function Header() {
                             <div className="col-lg-3">
                               <div className="site_author bg-primary">
                                 <div className="author_image ">
-                                  <img
-                                    src="/data/md.png"
-                                    alt="Site Author Image"
-                                  />
+                                  <img src="/data/md.png" alt="MD" />
                                 </div>
 
                                 <div className="author_box pt-4">
@@ -270,7 +261,7 @@ function Header() {
                                 >
                                   I’m deeply honored to address you as the
                                   Managing Director of Grand Asia Force Co.,Ltd.
-                                  <Link className="text-white pt-2">
+                                  <Link className="text-white pt-2" to={"#"}>
                                     Read more
                                   </Link>
                                 </p>
@@ -297,25 +288,25 @@ function Header() {
                         aria-labelledby="pages_submenu"
                       >
                         <li>
-                          <a href="about.html">Jobs in Thailand</a>
+                          <a href="#!">Jobs in Thailand</a>
                         </li>
 
                         <li>
-                          <a href="about.html">Jobs in Japan</a>
+                          <a href="#!">Jobs in Japan</a>
                         </li>
 
                         <li>
-                          <a href="about.html">Jobs in Malaysia</a>
+                          <a href="#!">Jobs in Malaysia</a>
                         </li>
 
                         <li>
-                          <a href="about.html">Jobs in Singapore</a>
+                          <a href="#!">Jobs in Singapore</a>
                         </li>
                       </ul>
                     </li>
 
                     <li>
-                      <a href="contact.html">Submit CV</a>
+                      <Link to={"#"}>Submit CV</Link>
                     </li>
 
                     <li class="dropdown">
@@ -342,7 +333,7 @@ function Header() {
                     </li>
 
                     <li>
-                      <a href="contact.html">News</a>
+                      <Link to={"/news"}>News</Link>
                     </li>
 
                     <li>
@@ -368,14 +359,17 @@ function Header() {
                   </button>
                 </li>
                 <li>
-                  <a className="btn btn-outline-light" href="pricing.html">
-                    <span className="btn_label" data-text="Get Started">
+                  <Link
+                    className="btn btn-outline-light"
+                    to={"mailto:grandasiaforce.gaf@gmail.com"}
+                  >
+                    <span className="btn_label" data-text="Mail">
                       Send Mail
                     </span>
                     <span className="btn_icon">
                       <i className="fa-solid fa-arrow-up-right" />
                     </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

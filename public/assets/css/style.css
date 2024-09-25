@@ -5852,7 +5852,7 @@ Responsive For Mobile & Tablet Devices
   .engine_image {
     float: none;
     margin: auto;
-    width: 614px;
+    width: 500px;
     height: 614px;
   }
 
@@ -5865,7 +5865,7 @@ Responsive For Mobile & Tablet Devices
   }
 
   .engine_image .image_wrap_1 {
-    max-width: 120px;
+    max-width: 200px;
   }
 
   .feature_partners_section::before {
