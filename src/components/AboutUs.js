@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
@@ -16,7 +15,7 @@ export default function AboutUs() {
               <div className="col-lg-4">
                 <div className="image_wrap position-relative">
                   <img
-                    src="/data/about_image_4.png"
+                    src="/data/bg/1.jpg"
                     alt="About Techco"
                     style={{
                       width: "100%",
@@ -26,12 +25,6 @@ export default function AboutUs() {
                       objectPosition: "top",
                     }}
                   />
-
-                  <Link className="video_btn ripple_effect" href="#">
-                    <span className="btn_icon">
-                      <i className="fa-solid fa-play" />
-                    </span>
-                  </Link>
                 </div>
               </div>
             </div>

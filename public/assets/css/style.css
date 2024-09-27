@@ -1510,7 +1510,7 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: 1;
   content: "";
   position: absolute;
-  background: linear-gradient(0deg, var(--bs-primary), transparent 70%);
+  /* background: linear-gradient(0deg, var(--bs-primary), transparent 70%); */
 }
 .our_world_employees .content_wrap {
   left: 0;
@@ -2154,7 +2154,7 @@ input[type="search"]::-webkit-search-results-decoration {
   content: "";
   position: absolute;
   animation: hueRotate 6s linear infinite;
-  background: linear-gradient(45deg, #002060, #0058DA);
+  background: linear-gradient(45deg, #002060, #0058da);
 }
 .site_header_1 + main {
   padding-top: 135px;
@@ -6837,7 +6837,7 @@ Responsive For Mobile & Tablet Devices
   }
 
   .site_header_1 .main_menu {
-    top: 155px;
+    top: 200px;
   }
 
   .site_header_1 + main {

@@ -24,6 +24,7 @@ function Header() {
                 <img
                   src="https://iam-myanmar.com/data/us.gif"
                   style={{ width: "30px" }}
+                  alt=""
                 ></img>
                 &nbsp; English
               </Link>
@@ -35,6 +36,7 @@ function Header() {
                 <img
                   src="https://cdn-icons-png.flaticon.com/128/330/330447.png"
                   style={{ width: "30px" }}
+                  alt=""
                 ></img>
                 &nbsp; Thailand
               </Link>
@@ -43,6 +45,7 @@ function Header() {
                 <img
                   src="https://iam-myanmar.com/data/jp.jpeg"
                   style={{ width: "30px" }}
+                  alt=""
                 ></img>
                 &nbsp; Japanese
               </Link>
@@ -58,7 +61,7 @@ function Header() {
               <div className="site_logo">
                 <Link className="site_link" to={"/"}>
                   <img
-                    src="https://grandasiaforce-gaf.com/public/data/logo.jpeg"
+                    src="/data/logo.jpeg"
                     alt="Grand Asia Force"
                     style={{ width: "1000px", maxWidth: "250%" }}
                   />
@@ -73,7 +76,7 @@ function Header() {
                   id="main_menu_dropdown"
                 >
                   <ul className="main_menu_list unordered_list justify-content-center">
-                    <li className="active">
+                    <li>
                       <Link className="nav-link" to={"/"}>
                         Home
                       </Link>
@@ -101,7 +104,7 @@ function Header() {
                                   <div className="col-lg-3 col-md-6">
                                     <Link
                                       className="iconbox_block_2"
-                                      to={"#"}
+                                      to={"/about"}
                                     >
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
@@ -143,7 +146,10 @@ function Header() {
                                   </div>
 
                                   <div className="col-lg-3 col-md-6">
-                                    <Link className="iconbox_block_2" to={"#"}>
+                                    <Link
+                                      className="iconbox_block_2"
+                                      to={"/services"}
+                                    >
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
@@ -162,7 +168,10 @@ function Header() {
                                   </div>
 
                                   <div className="col-lg-3 col-md-6">
-                                    <Link className="iconbox_block_2" to={"#"}>
+                                    <Link
+                                      className="iconbox_block_2"
+                                      to={"/message"}
+                                    >
                                       <span className="icon_title_wrap">
                                         <small className="iconbox_icon">
                                           <img
@@ -174,6 +183,7 @@ function Header() {
                                           MD's Message
                                         </small>
                                       </span>
+
                                       <small className="description mb-0">
                                         Meet our MD
                                       </small>
@@ -184,20 +194,17 @@ function Header() {
 
                               <ul className="btns_group p-0 unordered_list justify-content-start">
                                 <li>
-                                  <a
+                                  <Link
                                     className="btn btn-primary"
-                                    href="contact.html"
+                                    to={"/contact"}
                                   >
-                                    <span
-                                      className="btn_label"
-                                      data-text="Free Consultation"
-                                    >
-                                      Free Consultation
+                                    <span className="btn_label" data-text="Now">
+                                      Contact
                                     </span>
                                     <span className="btn_icon">
                                       <i className="fa-solid fa-arrow-up-right" />
                                     </span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
                                   <div className="review_short_info_2">
@@ -261,7 +268,10 @@ function Header() {
                                 >
                                   I’m deeply honored to address you as the
                                   Managing Director of Grand Asia Force Co.,Ltd.
-                                  <Link className="text-white pt-2" to={"#"}>
+                                  <Link
+                                    className="text-white pt-2"
+                                    to={"/message"}
+                                  >
                                     Read more
                                   </Link>
                                 </p>
@@ -272,41 +282,14 @@ function Header() {
                       </div>
                     </li>
 
-                    <li className="dropdown">
-                      <Link
-                        className="nav-link"
-                        href="#"
-                        id="pages_submenu"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
+                    <li>
+                      <Link className="nav-link" to={"/jobs"}>
                         Job Vacancies
                       </Link>
-                      <ul
-                        className="dropdown-menu"
-                        aria-labelledby="pages_submenu"
-                      >
-                        <li>
-                          <a href="#!">Jobs in Thailand</a>
-                        </li>
-
-                        <li>
-                          <a href="#!">Jobs in Japan</a>
-                        </li>
-
-                        <li>
-                          <a href="#!">Jobs in Malaysia</a>
-                        </li>
-
-                        <li>
-                          <a href="#!">Jobs in Singapore</a>
-                        </li>
-                      </ul>
                     </li>
 
                     <li>
-                      <Link to={"#"}>Submit CV</Link>
+                      <Link to={"/submit-cv"}>Submit CV</Link>
                     </li>
 
                     <li class="dropdown">

@@ -24,7 +24,7 @@ export default function Team() {
                   >
                     <img
                       src="/assets/images/team/team_member_image_1.webp"
-                      alt="Team Member Image"
+                      alt=""
                     />
                     <i className="fa-solid fa-arrow-up-right" />
                   </Link>
@@ -79,11 +79,11 @@ export default function Team() {
                   <a
                     className="image_wrap"
                     aria-label="Team Details Button"
-                    href="team_details.html"
+                    href="#!"
                   >
                     <img
                       src="assets/images/team/team_member_image_2.webp"
-                      alt="Team Member Image"
+                      alt=""
                     />
                     <i className="fa-solid fa-arrow-up-right" />
                   </a>
@@ -137,7 +137,7 @@ export default function Team() {
                   <a
                     className="image_wrap"
                     aria-label="Team Details Button"
-                    href="team_details.html"
+                    href="#!"
                   >
                     <img
                       src="assets/images/team/team_member_image_3.webp"

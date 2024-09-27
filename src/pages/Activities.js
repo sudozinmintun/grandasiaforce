@@ -4,6 +4,7 @@ import SlugTitle from "../utility/SlugTitle";
 
 const images = [
   "1.jpg",
+  "1686130380901.jpg",
   "2.jpg",
   "3.jpg",
   "1695437245757.jpg",

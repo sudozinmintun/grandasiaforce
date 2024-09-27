@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function News() {
   return (
@@ -21,7 +22,7 @@ export default function News() {
             <div className="col-lg-4">
               <div className="blog_post_block">
                 <div className="blog_post_image">
-                  <a className="image_wrap" href="#!">
+                  <Link className="image_wrap" to={`/news/detail/1`}>
                     <img
                       src="https://recruitmentmyanmarsak.com/admin/uploads/files/v3bgmik8raeo96w.jpg"
                       alt=""
@@ -33,134 +34,36 @@ export default function News() {
                         objectPosition: "center",
                       }}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="blog_post_content">
                   <div className="post_meta_wrap">
                     <ul className="category_btns_group unordered_list">
                       <li>
-                        <a href="#!">Admin</a>
+                        <Link to={`/news/detail/1`}>Admin</Link>
                       </li>
                     </ul>
                     <ul className="post_meta unordered_list">
                       <li>
-                        <a href="#!">
+                        <Link to={`/news/detail/1`}>
                           <img
                             src="assets/images/icons/icon_calendar.svg"
                             alt="Icon Calendar"
                           />{" "}
                           9/24/2024
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <h3 className="blog_post_title">
-                    <a href="#!">Job Search Advice</a>
+                    <Link to={`/news/detail/1`}>Job Search Advice</Link>
                   </h3>
-                  <a className="btn_unfill" href="#!">
+                  <Link className="btn_unfill" to={`/news/detail/1`}>
                     <span className="btn_icon">
                       <i className="fa-solid fa-arrow-up-right" />
                     </span>
                     <span className="btn_label">Read More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="blog_post_block">
-                <div className="blog_post_image">
-                  <a className="image_wrap" href="#!">
-                    <img
-                      src="https://recruitmentmyanmarsak.com/admin/uploads/files/bo7c_38d2x5f4v1.jpg"
-                      alt=""
-                      style={{
-                        width: "100%",
-                        height: "250px",
-                        backgroundSize: "cover",
-                        objectFit: "cover",
-                        objectPosition: "center",
-                      }}
-                    />
-                  </a>
-                </div>
-                <div className="blog_post_content">
-                  <div className="post_meta_wrap">
-                    <ul className="category_btns_group unordered_list">
-                      <li>
-                        <a href="#!">Admin</a>
-                      </li>
-                    </ul>
-                    <ul className="post_meta unordered_list">
-                      <li>
-                        <a href="#!">
-                          <img
-                            src="assets/images/icons/icon_calendar.svg"
-                            alt="Icon Calendar"
-                          />{" "}
-                          9/24/2024
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <h3 className="blog_post_title">
-                    <a href="#!">Growing your career </a>
-                  </h3>
-                  <a className="btn_unfill" href="#!">
-                    <span className="btn_icon">
-                      <i className="fa-solid fa-arrow-up-right" />
-                    </span>
-                    <span className="btn_label">Read More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="blog_post_block">
-                <div className="blog_post_image">
-                  <a className="image_wrap" href="#!">
-                    <img
-                      src="https://recruitmentmyanmarsak.com/admin/uploads/files/zp_x7oqr40fkmie.png"
-                      alt=""
-                      style={{
-                        width: "100%",
-                        height: "250px",
-                        backgroundSize: "cover",
-                        objectFit: "cover",
-                        objectPosition: "center",
-                      }}
-                    />
-                  </a>
-                </div>
-                <div className="blog_post_content">
-                  <div className="post_meta_wrap">
-                    <ul className="category_btns_group unordered_list">
-                      <li>
-                        <a href="#!">Admin</a>
-                      </li>
-                    </ul>
-                    <ul className="post_meta unordered_list">
-                      <li>
-                        <a href="#!">
-                          <img
-                            src="assets/images/icons/icon_calendar.svg"
-                            alt="Icon Calendar"
-                          />{" "}
-                          9/24/2024
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <h3 className="blog_post_title">
-                    <a href="#!">Job Interview Tips </a>
-                  </h3>
-                  <a className="btn_unfill" href="#!">
-                    <span className="btn_icon">
-                      <i className="fa-solid fa-arrow-up-right" />
-                    </span>
-                    <span className="btn_label">Read More</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
