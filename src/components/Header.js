@@ -8,15 +8,8 @@ function Header() {
         <div className="container">
           <div className="row d-flex justify-content-between">
             <div className="col-md-6">
-              <Link className="text-white">+959 964 653 395, </Link>
-              <Link
-                className="text-white"
-                style={{ marginLeft: "10px", marginRight: "10px" }}
-              >
-                {" "}
-                +959 964 653 395
-              </Link>
-              <Link className="text-white">grandasiaforce.gaf@gmail.com</Link>
+              <Link className="text-white">+959 750 126 100 &nbsp;&nbsp;</Link>
+              <Link className="text-white"> grandasiaforce.gaf@gmail.com</Link>
             </div>
 
             <div className="col-md-6 ">
@@ -310,6 +303,12 @@ function Header() {
                         <li>
                           <Link to={"/activities/japanese-activities"}>
                             Japanese Activities
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link to={"/activities/labour-activities"}>
+                            Labour Activities
                           </Link>
                         </li>
                       </ul>

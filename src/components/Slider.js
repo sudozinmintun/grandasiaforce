@@ -51,7 +51,7 @@ function Slider() {
                     </span>
                     <span className="hotline_content">
                       <small>CONTACT US DAILY</small>
-                      <strong className="text-white">+959 964 653 395</strong>
+                      <strong className="text-white">+959 750 126 100</strong>
                     </span>
                   </a>
                 </li>

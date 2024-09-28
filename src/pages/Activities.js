@@ -22,8 +22,18 @@ const images = [
   "IMG_20240419_161609.jpg",
 ];
 
+const th_images = [
+  "1683527690853.jpg",
+  "1683527690967.jpg",
+  "1683784080751.jpg",
+  "1683784080841.jpg",
+  "1683784080977.jpg",
+];
+
 function Activities() {
   const { slug } = useParams();
+  const selectedImages = slug === "labour-activities" ? th_images : images;
+  const columnClass = slug === "labour-activities" ? "col-lg-6" : "col-lg-3";
 
   return (
     <div>
@@ -54,15 +64,19 @@ function Activities() {
                     <span class="badge bg-secondary text-white">Crafting</span>
                     Success With 😍 Us
                   </div>
-                  <h2 class="heading_text">
-                    Japanese Interviews and Activities
+
+                  <h2 className="heading_text">
+                    {slug === "labour-activities"
+                      ? "Labour Activities"
+                      : "Japanese Interviews and Activities"}
                   </h2>
-                  <p class="heading_description mb-0">
-                    Explore Japanese interviews and activities, focusing on
-                    etiquette and cultural insights for successful job hunting
-                    and heritage appreciation.
+                  <p className="heading_description mb-0">
+                    {slug === "labour-activities"
+                      ? "Explore labour activities, focusing on worker rights, safety protocols, and career development opportunities."
+                      : "Explore Japanese interviews and activities, focusing on etiquette and cultural insights for successful job hunting and heritage appreciation."}
                   </p>
                 </div>
+
                 <div class="col-lg-5 d-none d-lg-flex justify-content-end">
                   <Link class="btn btn-primary" to={"/contact"}>
                     <span class="btn_label" data-text="Contact">
@@ -78,8 +92,12 @@ function Activities() {
           </div>
 
           <div className="filter_elements_wrapper row">
-            {images.map((imageName, index) => (
-              <div className="col-lg-3">
+            {selectedImages.map((imageName, index) => (
+              <div
+                className={
+                  slug === "labour-activities" ? "col-lg-6" : "col-lg-3"
+                }
+              >
                 <div className="portfolio_block portfolio_layout_1">
                   <div className="portfolio_image">
                     <a className="portfolio_image_wrap bg-light" href="#!">
