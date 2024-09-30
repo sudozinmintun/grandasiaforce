@@ -1,7 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 export default function Contact() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("https://www.grandasiaforce-gaf.com/admin/api/contacts.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      console.log(result);
+
+      if (response.ok) {
+        setSuccessMessage(result.message);
+        setErrorMessage(""); // Clear any previous error messages
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" }); // Reset form
+      } else {
+        setErrorMessage(result.error || "Failed to submit the form.");
+        setSuccessMessage(""); // Clear any previous success messages
+      }
+    } catch (error) {
+      setErrorMessage("An error occurred while submitting the form.");
+      setSuccessMessage(""); // Clear any previous success messages
+    }
+  };
+
   return (
     <div>
       <section
@@ -164,93 +210,106 @@ export default function Contact() {
                   &nbsp; Send Us A Message
                 </div>
                 <h3 className="form_title">
-                  Alternatively, you can fill out the contact form, and our team
-                  will get back to you shortly.
+                  Alternatively, you can fill out the contact form, and our team will get back to you shortly.
                 </h3>
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label className="input_title" htmlFor="input_name">
-                        <i className="fa-regular fa-user" />
-                      </label>
-                      <input
-                        id="input_name"
-                        className="form-control"
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                      />
+                <form onSubmit={handleSubmit}>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label className="input_title" htmlFor="input_name">
+                          <i className="fa-regular fa-user" />
+                        </label>
+                        <input
+                          id="input_name"
+                          className="form-control"
+                          type="text"
+                          name="name"
+                          placeholder="Your Name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label className="input_title" htmlFor="input_email">
+                          <i className="fa-regular fa-envelope" />
+                        </label>
+                        <input
+                          id="input_email"
+                          className="form-control"
+                          type="email"
+                          name="email"
+                          placeholder="Your Email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label className="input_title" htmlFor="input_phone">
+                          <i className="fa-regular fa-phone-volume" />
+                        </label>
+                        <input
+                          id="input_phone"
+                          className="form-control"
+                          type="tel"
+                          name="phone"
+                          placeholder="Your Phone No."
+                          value={formData.phone}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label className="input_title" htmlFor="input_company">
+                          <i className="fa-regular fa-globe" />
+                        </label>
+                        <input
+                          id="input_company"
+                          className="form-control"
+                          type="text"
+                          name="subject"
+                          placeholder="Subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <label className="input_title" htmlFor="input_textarea">
+                          <i className="fa-regular fa-comments" />
+                        </label>
+                        <textarea
+                          id="input_textarea"
+                          className="form-control"
+                          name="message"
+                          placeholder="How can we help you?"
+                          value={formData.message}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                      <button type="submit" className="btn btn-primary">
+                        <span className="btn_label" data-text="Send Message">
+                          Send Message
+                        </span>
+                        <span className="btn_icon">
+                          <i className="fa-solid fa-arrow-up-right" />
+                        </span>
+                      </button>
                     </div>
                   </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label className="input_title" htmlFor="input_email">
-                        <i className="fa-regular fa-envelope" />
-                      </label>
-                      <input
-                        id="input_email"
-                        className="form-control"
-                        type="email"
-                        name="email"
-                        placeholder="Your Enter"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label className="input_title" htmlFor="input_phone">
-                        <i className="fa-regular fa-phone-volume" />
-                      </label>
-                      <input
-                        id="input_phone"
-                        className="form-control"
-                        type="tel"
-                        name="phone"
-                        placeholder="Your Phone No."
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <label className="input_title" htmlFor="input_company">
-                        <i className="fa-regular fa-globe" />
-                      </label>
-                      <input
-                        id="input_company"
-                        className="form-control"
-                        type="text"
-                        name="companyname"
-                        placeholder="Your Company Name"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="form-group">
-                      <label className="input_title" htmlFor="input_textarea">
-                        <i className="fa-regular fa-comments" />
-                      </label>
-                      <textarea
-                        id="input_textarea"
-                        className="form-control"
-                        name="message"
-                        placeholder="How can we help you?"
-                        defaultValue={""}
-                      />
-                    </div>
-                    <button type="submit" className="btn btn-primary">
-                      <span className="btn_label" data-text="Send Message">
-                        Send Message
-                      </span>
-                      <span className="btn_icon">
-                        <i className="fa-solid fa-arrow-up-right" />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <br></br>
+                </form>
+                {successMessage && <div className="alert alert-success">{successMessage}</div>}
+                {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+                <br />
               </div>
             </div>
 

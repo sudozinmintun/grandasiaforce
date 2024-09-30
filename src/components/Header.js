@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ActivitiesList from "./ActivitiesList";
 
 function Header() {
   return (
@@ -300,17 +301,9 @@ function Header() {
                         class="dropdown-menu"
                         aria-labelledby="portfolio_submenu"
                       >
-                        <li>
-                          <Link to={"/activities/japanese-activities"}>
-                            Japanese Activities
-                          </Link>
-                        </li>
 
-                        <li>
-                          <Link to={"/activities/labour-activities"}>
-                            Labour Activities
-                          </Link>
-                        </li>
+                        <ActivitiesList/>
+                        
                       </ul>
                     </li>
 
